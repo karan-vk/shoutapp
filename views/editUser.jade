@@ -1,0 +1,14 @@
+extends layout 
+block content
+    h1 Edit User
+    form#fromAddUser(name='formAddUser', method='post', action='/editUser') 
+        div
+            input#inputUserName(type='text', name='username', placeholder='Enter User Name',value='#{username}')
+        div
+            input#inputPassword(type='password', name='password', placeholder='Enter Password',value='#{password}')
+        div
+            input#inputEmail(type='email', name='email', placeholder='Enter Email',value='#{email}')
+        div
+            input#inputFullName(type='text', name='name', placeholder='Enter Full Name',value='#{name}')
+        div
+            button#btnSubmit(type='submit') Submit
